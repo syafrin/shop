@@ -37,7 +37,7 @@
 					<td>$data->job</td>
 					<td>$data->date</td>
 				</tr>";
-				$no++;
+				
 				};
 				?>
 			</table>
