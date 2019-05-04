@@ -15,11 +15,11 @@
 			<a href="index.php" class="btn btn-success">Tambah Peserta Lawak</a>
 			<table class="table">
 				<tr>
-					<td>id Peserta</td>
+					<td>NO</td>
 					<td>Name</td>
 					<td>Email</td>
 					<td>Job</td>
-					
+					<td>Date</td>
 				</tr>
 				<?php
 				require("library.php");
@@ -27,14 +27,15 @@
 				$Lib = new Library();
 				//memanggil method untuk menampilkan record
 				$show = $Lib->showPeserta();
+				$no=1;
 				while($data = $show->fetch(PDO::FETCH_OBJ)){
 				echo "
 				<tr>
-					<td>$data->id_peserta</td>
+					<td>$no++</td>
 					<td>$data->name</td>
 					<td>$data->email</td>
 					<td>$data->job</td>
-					
+					<td>$data->Date</td>
 				</tr>";
 				};
 				?>
