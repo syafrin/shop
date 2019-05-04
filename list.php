@@ -35,7 +35,7 @@
 					<td>$data->name</td>
 					<td>$data->email</td>
 					<td>$data->job</td>
-					<td>$data->Date</td>
+					<td>$data->date</td>
 				</tr>";
 				$no++;
 				};
