@@ -6,9 +6,9 @@
 			//$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 		}
-		public function addPeserta($name, $email,$job, $date){
+		public function addPeserta($name, $email,$job){
 			$tanggal = date('d-m-Y');
-			$sql = "INSERT INTO peserta (name, email, job, date) VALUES('$name', '$email', '$tanggal')";
+			$sql = "INSERT INTO peserta (name, email, job, date) VALUES('$name', '$email','$job','$tanggal')";
 			$query = $this->db->query($sql);
 			if(!$query){
 				return "Failed";
