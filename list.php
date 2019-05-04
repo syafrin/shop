@@ -12,13 +12,14 @@
 	<body>
 		<div class="container">
 			<h2>Daftar Nama Peserta Lawak</h2>
+			<a href="index.php" class="btn btn-success">Tambah Peserta Lawak</a>
 			<table class="table">
 				<tr>
 					<td>id Peserta</td>
 					<td>Name</td>
 					<td>Email</td>
 					<td>Job</td>
-					<
+					
 				</tr>
 				<?php
 				require("library.php");
@@ -38,7 +39,7 @@
 				};
 				?>
 			</table>
-			<a href="index.php" class="btn btn-success">Tambah Peserta Lawak</a>
+			
 		</div>
 	</body>
 </html>
