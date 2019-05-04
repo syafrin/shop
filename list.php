@@ -31,12 +31,13 @@
 				while($data = $show->fetch(PDO::FETCH_OBJ)){
 				echo "
 				<tr>
-					<td>$no++</td>
+					<td>".$no."</td>
 					<td>$data->name</td>
 					<td>$data->email</td>
 					<td>$data->job</td>
 					<td>$data->Date</td>
 				</tr>";
+				$no++;
 				};
 				?>
 			</table>
