@@ -9,20 +9,20 @@ catch (PDOException $e) {
 }
 
 // SQL Server Extension Sample Code:
-$connectionInfo = array("UID" => "syafrin@webserversyafrin", "pwd" => "Android_123", "Database" => "dbwebapp", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-$serverName = "tcp:webserversyafrin.database.windows.net,1433";
-$conn = sqlsrv_connect($serverName, $connectionInfo);
-echo $conn;
+//$connectionInfo = array("UID" => "syafrin@webserversyafrin", "pwd" => "Android_123", "Database" => "dbwebapp", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+//$serverName = "tcp:webserversyafrin.database.windows.net,1433";
+//$conn = sqlsrv_connect($serverName, $connectionInfo);
+//echo $conn;
 //$sql = "SELECT * FROM peserta";
-if($sql){
+//if($sql){
    // $query = $this->db->query($sql);
     //while($data = $query->fetch(PDO::FETCH_OBJ)){
-    echo"koneksi berhasil";
+  //  echo"koneksi berhasil";
     
    //}
-}else{
- echo"gagal koneksi";   
-}    
+//}else{
+ //echo"gagal koneksi";   
+//}    
 
 
 ?>
