@@ -13,14 +13,16 @@ $connectionInfo = array("UID" => "syafrin@webserversyafrin", "pwd" => "Android_1
 $serverName = "tcp:webserversyafrin.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 
-$sql = "SELECT * FROM peserta";
+//$sql = "SELECT * FROM peserta";
 if($sql){
-    $query = $this->db->query($sql);
-    while($data = $query->fetch(PDO::FETCH_OBJ)){
-    echo $data->name;
+   // $query = $this->db->query($sql);
+    //while($data = $query->fetch(PDO::FETCH_OBJ)){
+    echo"koneksi berhasil";
     
-   }
+   //}
 }else{
- echo"gagal";   
+ echo"gagal koneksi";   
 }    
+
+
 ?>
