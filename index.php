@@ -14,9 +14,9 @@
 			<h2>Tambah Peserta Lawak</h2>
 			<a href="list.php"><input value="Lihat Peserta" class="btn btn-info"></a>
 			<form action="index.php" method="POST" class="form-group row">
-				Nama : <input type="text" name="name" required="required" class="form-control"><br/>
-				Email : <input type="text" name="email" class="form-control"><br/>
-				Job : <input type="text" name="job" class="form-control"><br/>
+				Nama : <input type="text" name="name" required="required" maxlength="100" class="form-control"><br/>
+				Email : <input type="email" name="email" required="required" maxlength="60" class="form-control"><br/>
+				Job : <input type="text" name="job" required="required" maxlength="60" class="form-control"><br/>
 				<input type="submit" name="tambahpst" value="Simpan" class="btn btn-success">
 				<input type="reset" value="Batal" class="btn btn-warning">
 			</form>
