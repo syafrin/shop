@@ -12,5 +12,10 @@ catch (PDOException $e) {
 $connectionInfo = array("UID" => "syafrin@webserversyafrin", "pwd" => "Android_123", "Database" => "dbwebapp", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
 $serverName = "tcp:webserversyafrin.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
-echo "koneksi dicoba";
+$sql = "SELECT * FROM peserta";
+$query = $this->db->query($sql);
+while($data = $query->fetch(PDO::FETCH_OBJ)){
+    echo $data->name;
+    
+}
 ?>
