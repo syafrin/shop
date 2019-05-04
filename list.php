@@ -15,7 +15,7 @@
 			<a href="index.php" class="btn btn-success">Tambah Peserta Lawak</a>
 			<table class="table">
 				<tr>
-					<td>NO</td>
+					
 					<td>Name</td>
 					<td>Email</td>
 					<td>Job</td>
@@ -27,11 +27,11 @@
 				$Lib = new Library();
 				//memanggil method untuk menampilkan record
 				$show = $Lib->showPeserta();
-				$no=1;
+				
 				while($data = $show->fetch(PDO::FETCH_OBJ)){
 				echo "
 				<tr>
-					<td>".$no."</td>
+					
 					<td>$data->name</td>
 					<td>$data->email</td>
 					<td>$data->job</td>
