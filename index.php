@@ -13,16 +13,17 @@ catch (PDOException $e) {
 //$serverName = "tcp:webserversyafrin.database.windows.net,1433";
 //$conn = sqlsrv_connect($serverName, $connectionInfo);
 //echo $conn;
-//$sql = "SELECT * FROM peserta";
-//if($sql){
-   // $query = $this->db->query($sql);
-    //while($data = $query->fetch(PDO::FETCH_OBJ)){
-  //  echo"koneksi berhasil";
+$sql = "SELECT * FROM peserta";
+$res = $conn->prepare($sql);
+$res->execute();
+$data=$res->fetchAll(PDO::FETCH_BOTH);
+
+foreach($data as $row){
     
-   //}
-//}else{
- //echo"gagal koneksi";   
-//}    
+    echo $row['name'];
+    echo"<br/>";
+}
+
 
 
 ?>
