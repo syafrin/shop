@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>CRUD PDO</title>
+		<title>Submission 1 </title>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<!-- Latest compiled and minified JavaScript -->
@@ -12,16 +12,16 @@
 	<body>
 		<div class="container">
 			<h2>Tambah Peserta Lawak</h2>
+			<a href="list.php"><input value="Lihat Peserta" class="btn btn-info"></a>
 			<form action="index.php" method="POST" class="form-group row">
 				Nama : <input type="text" name="name" required="required" class="form-control"><br/>
 				Email : <input type="text" name="email" class="form-control"><br/>
 				Job : <input type="text" name="job" class="form-control"><br/>
-				<input type="submit" name="tambahpst" value="Tambah" class="btn btn-success">
-				<a href="list.php"><input value="Lihat Peserta" class="btn btn-info"></a>
+				<input type="submit" name="tambahpst" value="Simpan" class="btn btn-success">
 				<input type="reset" value="Batal" class="btn btn-warning">
 			</form>
 		</div>
-		<a href="list.php" class="btn btn-success">Daftar Peserta Lawak</a>
+		
 	</body>
 </html>
 <?php
